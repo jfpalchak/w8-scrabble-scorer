@@ -1,6 +1,7 @@
 //USING DIRECTIVES HERE
+using ScrabbleScorer.Models;
 
-namespace ProjectName
+namespace ScrabbleScorer
 {
   class Program
   {

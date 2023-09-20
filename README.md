@@ -1,12 +1,13 @@
-# _Title_
+# _Scrabble Scorer_
 
-#### By _Joey Palchak_
+#### By _Seth Gonzales, Paul LeTourneau, Joey Palchak_
 
 #### _{Brief description of application}_
 
 ## Technologies Used
 
 * C#
+* .NET
 
 ## Description
 
@@ -28,4 +29,4 @@ _{This is a detailed description of your application. Give as much detail as nee
 
 MIT License
 
-Copyright (c) _date_ _Joey Palchak_
+Copyright (c) _9/20/2023_ _Seth Gonzales, Paul LeTourneau, Joey Palchak_
