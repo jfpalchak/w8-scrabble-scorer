@@ -18,13 +18,33 @@ namespace ScrabbleScorer.Tests
     public void WordArray_TransformUserInputIntoArray_Array()
     {
       //arrange
-      string userInput = "panino"
+      string userInput = "panino";
       ScrabbleWord newWord = new ScrabbleWord("panino");
       // act
-      char[] expectArray = userInput.ToCharArray();
+      char[] expectArray = userInput.ToUpper().ToCharArray();
       char[] theorArray = newWord.WordArray();
       //assert
-      CollectionAssert.AreEqual(expectedArray, theorArray);
+      CollectionAssert.AreEqual(expectArray, theorArray);
+    }
+    [TestMethod]
+    public void GetPoints_ReturnsScoreForSpecifiedCharacter_Int()
+    {
+      // arrange
+      ScrabbleWord newWord = new ScrabbleWord("p");
+      // act
+      int points = newWord.GetPoints();
+      // assert
+      Assert.AreEqual(3, points);
+    }
+  [TestMethod]
+    public void GetPoints_ReturnsScoreForSpecifiedWord_Int()
+    {
+      // arrange
+      ScrabbleWord newWord = new ScrabbleWord("panino");
+      // act
+      int points = newWord.GetPoints();
+      // assert
+      Assert.AreEqual(8, points);
     }
   }
 }
