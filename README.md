@@ -2,7 +2,7 @@
 
 #### By _Seth Gonzales, Paul LeTourneau, Joey Palchak_
 
-#### _{Brief description of application}_
+#### _A console application that takes a word and returns the Scrabble score for that word._
 
 ## Technologies Used
 
@@ -12,7 +12,20 @@
 
 ## Description
 
-_{This is a detailed description of your application. Give as much detail as needed to explain what the application does as well as any other information you want users or other developers to have.}_
+The application asks the user to enter a single word. Taking the user's input, the program parses the given string into an array of characters, and calculates the word's total score according to the sum of each character's point value. Upon evaluation of the word's score, it is presented to the user, after which the application will prompt the user to either enter another word, or exit the program.
+
+The point value for each letter is defined as follows:
+
+| Letter | Point Value |
+| :------ | -----------: |
+| A, E, I, O, U, L, N, R, S, T  |    1|
+| D, G                          |    2|
+| B, C, M, P                    |    3|
+| F, H, V, W, Y                 |    4|
+| K                             |    5|
+| J, X                          |    8|
+| Q, Z                          |   10|
+
 
 ## Setup/Installation Requirements
 
@@ -26,8 +39,7 @@ _{This is a detailed description of your application. Give as much detail as nee
 
 ## Known Bugs
 
-* _Any known issues_
-* _should go here_
+* User can enter non-alphabetical characters without error, although the special character's will not be counted.
 
 ## License
 
